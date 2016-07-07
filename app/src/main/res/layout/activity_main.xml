@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yadia.singlescreenapp.MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee Bar"
+        android:textSize="24sp"
+        android:layout_below="@+id/image"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"
+        android:textColor="#0b7a87" />
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:+806-555 455 5555"
+        android:layout_below="@+id/txtName"
+        android:padding="5sp"
+        />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice Street, Chungli Dist., Taoyuan City, Taiwan"
+        android:layout_below="@+id/txtPhone"
+        android:padding="5sp"
+        android:textColor="#616161" />
+
+    <TextView
+        android:id="@+id/txtHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours: Mon-Sun:10:00 pm - 1:00 am"
+        android:padding="5sp"
+        android:layout_below="@+id/txtAddress"
+        android:textColor="#616161" />
+
+    <TextView
+        android:id="@+id/txtWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website: www.nicecoffee.com"
+        android:padding="5sp"
+        android:layout_below="@id/txtHours"
+        android:textColor="#616161" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>
