@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Awesome Shop</string>
+    <string name="name">Coffee Bar</string>
+    <string name="address">Nice Street, Chungli Dist., Taoyuan City, Taiwan</string>
+    <string name="phone">Phone: 806 555 455 5555</string>
+    <string name="hours">Hours: Mon-Sun:10:00 pm - 1:00 am</string>
+    <string name="website"> Website: www.nicecoffee.com</string>
 </resources>

@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yadia.singlescreenapp.MainActivity"
-    android:orientation="vertical"
     android:padding="10dp"
     android:background="#ffffff">
 
@@ -12,54 +11,55 @@
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coffee Bar"
+        android:text="@string/name"
         android:textSize="24sp"
-        android:layout_below="@+id/image"
+        android:layout_below="@id/image"
         android:paddingBottom="10sp"
-        android:paddingTop="10sp"
-        android:textColor="#0b7a87" />
+        android:paddingTop="10dp"
+        android:textColor="@color/titles"
+         />
 
     <TextView
         android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone:+806-555 455 5555"
-        android:layout_below="@+id/txtName"
-        android:padding="5sp"
-        />
+        android:text="@string/phone"
+        android:layout_below="@id/txtName"
+        android:padding="5dp"
+        android:textColor="@color/colorBody" />
 
     <TextView
         android:id="@+id/txtAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nice Street, Chungli Dist., Taoyuan City, Taiwan"
-        android:layout_below="@+id/txtPhone"
-        android:padding="5sp"
-        android:textColor="#616161" />
+        android:text="@string/address"
+        android:layout_below="@id/txtPhone"
+        android:padding="5dp"
+        android:textColor="@color/colorBody" />
 
     <TextView
         android:id="@+id/txtHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hours: Mon-Sun:10:00 pm - 1:00 am"
-        android:padding="5sp"
-        android:layout_below="@+id/txtAddress"
-        android:textColor="#616161" />
+        android:text="@string/hours"
+        android:padding="5dp"
+        android:layout_below="@id/txtAddress"
+        android:textColor="@color/colorBody" />
 
     <TextView
-        android:id="@+id/txtWebsite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Website: www.nicecoffee.com"
-        android:padding="5sp"
+        android:text="@string/website"
+        android:padding="5dp"
         android:layout_below="@id/txtHours"
-        android:textColor="#616161" />
+        android:autoLink="web"
+        android:textColor="@color/colorBody" />
 
     <ImageView
         android:id="@+id/image"
         android:src="@drawable/logo"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/logo_image"
         android:scaleType="centerInside"
         android:layout_alignParentTop="true" />
 </RelativeLayout>
